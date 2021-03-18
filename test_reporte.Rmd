@@ -1,0 +1,25 @@
+---
+title: "Reporte Situación Actual COVID-19 Edomex"
+author: "Guillermo de Anda-Jáuregui, Rodrigo Zepeda"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: pdf_document
+---
+
+* Considerando registros de los últimos 30 días
+
+```{r echo=F, warning=F, error=F, message=FALSE}
+source("script_mapas_edomex.R")
+library(cowplot)
+```
+
+
+```{r echo=F}
+lapply(names(mapas_under60), function(i){
+  list(mapas_under60[[i]],
+       mapas_60over[[i]]
+       ) %>% 
+    cowplot::plot_grid(plotlist = ., nrow = 1)
+  
+})
+```
+
