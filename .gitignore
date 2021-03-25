@@ -5,6 +5,9 @@
 # Session Data files
 .RData
 
+#Dropbox
+.DS_Store
+
 # User-specific files
 .Ruserdata
 
