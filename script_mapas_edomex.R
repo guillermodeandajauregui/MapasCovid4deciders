@@ -18,11 +18,10 @@ library(sf)
 
 # leer shp federal ----
 
-mx_shp <- read_sf("data/00mun.shp") #descargar de https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/geografia/marcogeo/889463807469/mg_2020_integrado.zip
+mx_shp <- read_sf("mg_2020_integrado/conjunto_de_datos/00mun.shp") #descargar de https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/geografia/marcogeo/889463807469/mg_2020_integrado.zip
 edomex_shp <-
   mx_shp %>% 
   filter(CVE_ENT=="15")
-# datos federales ----
 
 el_path <- "http://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/datos_abiertos_covid19.zip"
 temp <- tempfile()
