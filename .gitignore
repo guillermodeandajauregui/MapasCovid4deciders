@@ -43,3 +43,7 @@ vignettes/*.pdf
 
 # INEGI files
 mg_2020_integrado/
+conjunto_de_datos/
+*.rds
+*.dbf
+*.xlsx
