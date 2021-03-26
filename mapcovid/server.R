@@ -10,6 +10,7 @@
 library(shiny)
 library(mapview)
 library(leaflet)
+library(leafpop)
 library(sf)
 library(lubridate)
 library(tidyverse)

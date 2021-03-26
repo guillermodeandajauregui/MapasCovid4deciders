@@ -1,0 +1,12 @@
+name: mapcovid
+title: mapcovid
+username:
+account: rodrigozepeda
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3856509
+bundleId: 4395979
+url: https://rodrigozepeda.shinyapps.io/mapcovid/
+when: 1616719065.39467
+asMultiple: FALSE
+asStatic: FALSE
